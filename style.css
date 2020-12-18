@@ -1,0 +1,37 @@
+body{
+    position: relative;
+    font-size: 3vh;
+}
+#container{
+    height: 50vh;
+    width: 40vw;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin: auto;    
+}
+img{
+    width: 40vw;
+}
+#control{
+    margin-top: 1vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1vh;
+    height: 5vh;
+}
+#autoComplete{
+    width: 65.9%;
+}
+button{
+    font-weight: bold;
+}
+input{
+    font-size: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+.autoClass:hover{
+    background-color: rgb(76, 76, 230);
+    color: white
+}
