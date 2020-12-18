@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" alt="google Logo">
+        </div>
+        <div id="control">
+            <input type="text" id="search">
+            <button>Search</button>
+        </div>
+        <div id="autoComplete"></div>
+    </div>
+
+    <script id="autoComplete-template" type="text/x-handlebars-template">
+        {{#each result}}
+            <div class="autoClass" data-content="{{this}}">{{this}}</div>
+        {{/each}}
+      </script>
+
+    <script src="AutoCompleteTrie.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
